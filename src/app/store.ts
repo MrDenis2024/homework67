@@ -1,8 +1,9 @@
 import {configureStore} from '@reduxjs/toolkit';
+import {doorReducer} from '../components/Door/doorSlice';
 
 export  const store = configureStore({
   reducer: {
-    door: {},
+    door: doorReducer,
   },
 });
 
